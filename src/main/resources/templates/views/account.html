@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css\mystyle.css">
+<style type="text/css">
+body {
+   background-image: url("media/images/Login-Background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+</style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<title>Restaurant</title>
+</head>
+<body>
+
+	<div id="head-container">
+		<nav>
+			<a href="index.html"><img src="media\logos\logo1.jpeg"
+				class="webpage-logo"></a>
+			<ul>
+				<li><a class="manu-item" href="index">Home</a></li>
+				<li><a class="manu-item" href="foodmenu">Food Menu</a></li>
+				<li><a class="manu-item" href="order">Order</a></li>
+				<li><a class="manu-item" href="about">About Us</a></li>
+				<li><a class="manu-item" href="account">Login/Sign-Up</a></li>
+
+			</ul>
+
+		</nav>
+
+
+
+		<div class="account-conatiner">
+				
+
+			<button class="button-class" onclick="displayConatiner('login_container')">Log-In</button>
+			<button class="button-class" onclick="displayConatiner('sign-up-container')">Sign-Up</button>
+
+			<div id="login_container">
+
+				<form method="post" action="success">
+					<h1>Login</h1>
+					<hr>
+					<input class="input-item" type="email" name="email" id="email" placeholder="Email" required="required">
+					<input class="input-item" type="password" name="password" id="password11" placeholder="Password" required="required"><br> 
+						
+					<input class="input-item" type="submit" id="submitbutton" value=" submit " onclick="login()"> 
+				</form>
+
+
+
+			</div>
+			<div id="sign-up-container">
+
+				<form onsubmit="registration()" id="registrion-form" method="post" action="account">
+					<h1 id="reg-h1">Registration</h1>
+					<hr>
+					<input class="input-item" type="text" id="fname" name="fname" placeholder="First Name"
+						required="required">  
+					<input class="input-item" type="text" id="lname" name="lname" placeholder="Last Name" required="required"><br>
+					<input  class="input-item" type="email" name="email" id="email" placeholder="Email" 
+							required="required"> 
+					<input class="input-item" type="number" name="phone" id="phone" placeholder="Phone Number" required="required"><br>
+					<input  class="input-item" type="password" name="password" id="password1" placeholder="Password" required="required">
+					<input class="input-item" type="password" id="password2" placeholder="Conform Password" required="required"><br> 
+					<input class="input-item" name="address" type="text" id="address" placeholder="Address" required="required">
+					<input type="submit" class="input-item" id="submitbutton" value=" submit">
+				</form>
+			</div>
+
+
+ 
+		</div>
+
+
+
+
+	</div>
+
+
+
+</body>
+  <script type="text/javascript" src="js/RegistrationAndLogin.js"></script> 
+</html>
